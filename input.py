@@ -4,7 +4,7 @@ import printer
 
 
 def get_printers_from_file():
-    csv_info_file = open(utils.INPUT_FILE, newline='')
+    csv_info_file = open(utils.INPUT_FILE)
     reader = csv.reader(csv_info_file)
     list_of_printers = []
     for row in reader:

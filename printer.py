@@ -4,12 +4,15 @@ class Printer(object):
         self.printing_speed = printing_speed
         self.price = price_in_uah
 
+    def __str__(self):
+        return self.name + "; speed: " + str(self.printing_speed) + "; price: " + str(self.price)
+
     @staticmethod
     def compare(first, second, tag="price", greater_than=True):
         if tag == "price":
-            return greater_than and first.price > second.price
+            return first.price > second.price
         else:
-            return greater_than and first.printing_speed > second.printing_speed
+            return first.printing_speed > second.printing_speed
 
 
 
