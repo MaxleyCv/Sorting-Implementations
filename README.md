@@ -27,7 +27,7 @@ Else the number of random array elements will be asked after running
 
 In order to not to show all the elements in the terminal  
  (especially when there are 1000 of them)  
- add the tag ```display-elements=false``` to the command.
+ add the tag ```display-elements=false``` to the command.  
  
 ##Output
 In the output you will get:
