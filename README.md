@@ -1,6 +1,8 @@
 # Practical work #1
 ##
 ## Task
+**Variant - 15**  
+
 Sort an array of printers in two ways:
 - sort by printing speed with selection sort from high to low
 - sort by price with quicksort from low to high
@@ -11,6 +13,8 @@ Printer object contains 3 fields:
 - price in UAH
 
 ## Manual
+Pull all the files from the repository  
+
 In order to check the algorithm there are two options:
 - to take values from *.csv* file
 - to generate the values randomly  

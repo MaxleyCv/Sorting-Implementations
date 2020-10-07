@@ -5,7 +5,7 @@ import sys
 import utils
 import time
 import copy
-import input as imp
+import csv_reader as inp
 
 '''
 getting filename from the command prompt
@@ -33,7 +33,7 @@ if __name__ == "__main__":
             list_of_printers.append(Printer("Canon", random.randint(1, 100), random.randint(4000, 40000)))
     else:
         print("VALUES WILL BE TAKEN FROM " + utils.INPUT_FILE)
-        list_of_printers = imp.get_printers_from_file()
+        list_of_printers = inp.get_printers_from_file()
 
     if utils.DISPLAY_VALUES:
         for printer in list_of_printers:

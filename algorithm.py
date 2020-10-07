@@ -2,6 +2,7 @@ import printer
 import copy
 import utils
 
+
 def swap(list_of_things, i, j):
     container = copy.deepcopy(list_of_things[i])
     list_of_things[i] = copy.deepcopy(list_of_things[j])
@@ -28,12 +29,12 @@ def quicksort(list_of_printers, left_index, right_index):
         return list_of_printers
     utils.qsort_compare_counter += 1
     if left_index < right_index:
-        new_barrier = quicksort_barier_of_printers_devide(list_of_printers, left_index, right_index)
+        new_barrier = set_the_barrier(list_of_printers, left_index, right_index)
         quicksort(list_of_printers, left_index, new_barrier - 1)
         quicksort(list_of_printers, new_barrier + 1, right_index)
 
 
-def quicksort_barier_of_printers_devide(list_of_printers, left_position, right_position):
+def set_the_barrier(list_of_printers, left_position, right_position):
     current_index = (left_position - 1)
     wavechange_barrier = list_of_printers[right_position].price
     for running_index in range(left_position, right_position):
