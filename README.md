@@ -29,7 +29,8 @@ In order to not to show all the elements in the terminal
  (especially when there are 1000 of them)  
  add the tag ```display-elements=false``` to the command.  
  
-##Output
+##Output  
+
 In the output you will get:
 - time needed for the sorting algorithm
 - number of swaps during the runtime
